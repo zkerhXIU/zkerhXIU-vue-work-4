@@ -27,7 +27,7 @@ import pagination from'./pagination.js';
                 })
                 .catch((error) =>{
                   alert(`請重新登入`)
-                  window.location = './login4.html';
+                  window.location = './index.html';
                 })
               },
           getProducts( page = 1){//參數預設值
@@ -103,6 +103,6 @@ import pagination from'./pagination.js';
       app.component('product-modal',{
         props:['tempProduct','updateProduct'],
         template:'#product-modal-teplate',
-      })
+      });
 
       app.mount('#app');
